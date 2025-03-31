@@ -1,0 +1,108 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Fondo dividido */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #00c9b7; /* Verde aqua */
+    z-index: -1;
+}
+
+/* Barra de navegación */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    padding: 1.5rem 3rem;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar a:hover {
+    color: #e0f2f1;
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    width: 50%;
+    padding: 10rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #333;
+}
+
+header h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #e0f2f1;
+}
+
+header h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:rgb(80, 79, 79);
+    font-style: italic;
+}
+
+/* Collage de fotos */
+.dani-pitures-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.dani-pictures-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition
+}
